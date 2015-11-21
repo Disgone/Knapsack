@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using Xunit;
 
 namespace Knapsack.Tests
 {
-    [ExcludeFromCodeCoverage]
     public static class DateTimeExtensionTests
     {
         public class IsWeekend
