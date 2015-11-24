@@ -57,7 +57,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CollectionExtensionsTests.cs" />
     <Compile Include="DateTimeExtensionTests.cs" />
+    <Compile Include="ErrorCheckingExtensionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

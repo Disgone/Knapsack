@@ -16,6 +16,7 @@ namespace Knapsack
 
         /// <summary>
         /// Indicates if this instance of <see cref="DateTime"/> falls on or between the bounds created by two dates
+        /// Both lower and upper bounds are inclusive.
         /// </summary>
         /// <param name="date">The date to compare</param>
         /// <param name="lower">The lower date bound</param>
