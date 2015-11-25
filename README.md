@@ -5,6 +5,10 @@ Knapsack is a small collection of .Net utilities and helper methods.
 
 ## Usage
 
+### String
+    var myValue = "MyString";
+    myValue.Matches("mystring") // Performs case-insenstive match using the current culture
+
 ### DateTime
     var date = DateTime.Today;
     date.IsWeekend() // Returns true if date falls on a Saturday or Sunday
