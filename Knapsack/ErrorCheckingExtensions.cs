@@ -2,6 +2,9 @@
 
 namespace Knapsack
 {
+    /// <summary>
+    /// Helper methods for error or exceptions
+    /// </summary>
     public static class ErrorCheckingExtensions
     {
         /// <summary>

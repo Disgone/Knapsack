@@ -3,10 +3,13 @@ using System.Linq;
 
 namespace Knapsack
 {
+    /// <summary>
+    /// Helper methods for collections
+    /// </summary>
     public static class CollectionExtensions
     {
         /// <summary>
-        /// Checks if the value is a member of a colleciton of values.
+        /// Checks if the value is a member of a collection of values.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="needle">The value to search for</param>

@@ -2,6 +2,9 @@
 
 namespace Knapsack
 {
+    /// <summary>
+    /// Helper methods for string objects
+    /// </summary>
     public static class StringExtensions
     {
         /// <summary>

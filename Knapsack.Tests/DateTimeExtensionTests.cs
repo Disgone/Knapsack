@@ -73,5 +73,77 @@ namespace Knapsack.Tests
                 Assert.True(date.IsBetween(date.AddDays(1), date.AddDays(-1)));
             }
         }
+
+        public class Max
+        {
+            [Fact]
+            public void Returns_Maximum_Date()
+            {
+                DateTime dateA = new DateTime(2015, 11, 1, 12, 33, 00);
+                DateTime dateB = new DateTime(2015, 11, 14, 16, 0, 0);
+
+                var max = dateA.Max(dateB);
+
+                Assert.Equal(dateB, max);
+            }
+
+            [Fact]
+            public void Handles_Equal_Dates()
+            {
+                DateTime dateA = new DateTime(2015, 11, 1, 12, 33, 00);
+                DateTime dateB = new DateTime(2015, 11, 1, 12, 33, 00);
+
+                var max = dateA.Max(dateB);
+
+                Assert.Equal(dateA, max);
+            }
+
+            [Fact]
+            public void Compare_Two_Different_Kind_Of_Date()
+            {
+                DateTime dateA = new DateTime(2015, 11, 1, 12, 33, 00, DateTimeKind.Local);
+                DateTime dateB = new DateTime(2015, 11, 1, 12, 33, 00, DateTimeKind.Unspecified);
+
+                var max = dateA.Max(dateB);
+
+                Assert.Equal(dateB, max);
+            }
+        }
+
+        public class Min
+        {
+            [Fact]
+            public void Returns_Minimum_Date()
+            {
+                DateTime dateA = new DateTime(2015, 11, 1, 12, 33, 00);
+                DateTime dateB = new DateTime(2015, 11, 14, 16, 0, 0);
+
+                var min = dateA.Min(dateB);
+
+                Assert.Equal(dateA, min);
+            }
+
+            [Fact]
+            public void Handles_Equal_Dates()
+            {
+                DateTime dateA = new DateTime(2015, 11, 1, 12, 33, 00);
+                DateTime dateB = new DateTime(2015, 11, 1, 12, 33, 00);
+
+                var min = dateA.Min(dateB);
+
+                Assert.Equal(dateB, min);
+            }
+
+            [Fact]
+            public void Compare_Two_Different_Kind_Of_Date()
+            {
+                DateTime dateA = new DateTime(2015, 11, 1, 12, 33, 00, DateTimeKind.Local);
+                DateTime dateB = new DateTime(2015, 11, 1, 12, 33, 00, DateTimeKind.Unspecified);
+
+                var min = dateA.Min(dateB);
+
+                Assert.Equal(dateA, min);
+            }
+        }
     }
 }

@@ -13,6 +13,8 @@ Knapsack is a small collection of .Net utilities and helper methods.
     var date = DateTime.Today;
     date.IsWeekend() // Returns true if date falls on a Saturday or Sunday
     date.IsBetween(date.AddDays(-1), date.AddDays(1)) // Returns true if date falls between the upper and lower bounds
+    date.Min(dateB) // Returns the minimum (earlier) date between the two dates
+    date.Max(dateB) // Returns the maximum (later) date beteween the two dates
 
 ### Collection
     "one".IsIn("two", "six", "one") // Returns true if the argument is in the given list of arguments
